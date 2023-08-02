@@ -1,6 +1,6 @@
 
 import Header from "../components/Header/Header";
-import Apartment from "../components/Apartment/Home";
+import Card from "../components/Card/Home";
 import Footer from "../components/Footer/Footer"
 import Banner from "../components/Banner/Banner";
 import HomeImage from "../assets/mer.jpg"
@@ -12,7 +12,7 @@ function Home (){
         <section>
         <Header />
         <Banner  imageUrl={HomeImage} altText={altText} title={title}/>
-        <Apartment />
+        <Card />
         <Footer />
         </section>
     )

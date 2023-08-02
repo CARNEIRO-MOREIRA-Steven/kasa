@@ -6,7 +6,7 @@ function Footer () {
         <section id="footer">
             <div id="content_footer">
             <img alt="logo footer" id="logofooter"src={LogoFooter}></img>
-            <p>© 2020 Kasa. All rights reserved</p>
+            <p id="logofooter_p">© 2020 Kasa. All rights reserved</p>
             </div>
         </section>
     )
