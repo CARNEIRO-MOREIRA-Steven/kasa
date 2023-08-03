@@ -6,6 +6,7 @@
         height: 200px;
         object-fit: cover;
         border-radius: 15px;
+        filter:brightness(50%);
     }
     &__title{
         position: absolute;

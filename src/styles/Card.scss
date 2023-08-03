@@ -8,6 +8,7 @@ $BackgroundCard : linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgb(126, 70, 
 	border-radius: 15px;
 	padding: 25px 0px;
 	display: flex;
+	height: 600px;
 	&__card--logement { 
   margin: 25px;
 	background: $BackgroundCard ;
@@ -23,12 +24,14 @@ $BackgroundCard : linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgb(126, 70, 
 		flex-wrap: wrap;
 		width: 100%;
 		justify-content: center;
+		overflow: auto;
 	}
 
 #section__card--link {
 	text-decoration: none;
 	width: 30%;
-	height: 300px;
+	height: 300px;	
+
 }
 #section__card--image {
 	object-fit: cover;

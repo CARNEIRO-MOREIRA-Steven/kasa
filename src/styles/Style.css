@@ -1,0 +1,70 @@
+body{
+  margin: 0px;
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateOut {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.arrow {
+  transition: transform 500ms;
+}
+
+.rotated-in {
+  animation: rotateIn 500ms forwards;
+}
+
+.rotated-out {
+  animation: rotateOut 500ms forwards;
+}
+
+@keyframes slideIn {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    height: auto;
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+#collapse__description {
+  overflow: hidden;
+  height: 0;
+  transition: height 1000ms, opacity 500ms;
+}
+
+.open {
+  height: auto;
+  opacity: 1;
+}
+
+.closed {
+  height: 0;
+  opacity: 0;
+}

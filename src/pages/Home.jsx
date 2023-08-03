@@ -1,4 +1,3 @@
-
 import Header from "../components/Header/Header";
 import Card from "../components/Card/Home";
 import Footer from "../components/Footer/Footer"
