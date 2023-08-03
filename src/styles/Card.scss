@@ -1,0 +1,51 @@
+$BackgroundSection : #F6F6F6;
+$BackgroundCard : linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgb(126, 70, 70) 100%);
+
+#section {
+	background-color: $BackgroundSection;
+	width: 85%;
+	margin: 30px auto;
+	border-radius: 15px;
+	padding: 25px 0px;
+	display: flex;
+	&__card--logement { 
+  margin: 25px;
+	background: $BackgroundCard ;
+	height: 250px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+} 
+	#section__card {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+
+#section__card--link {
+	text-decoration: none;
+	width: 30%;
+	height: 300px;
+}
+#section__card--image {
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	width: 90%;
+	height: 70%;
+	border-radius: 15px;
+}
+#section__card--title {
+	position: relative;
+	color: white;
+	font-family: Montserrat;
+	font-size: 17px;
+	top: -85px;
+	left: 40px;
+	z-index: 10;
+	width: 190px;
+}

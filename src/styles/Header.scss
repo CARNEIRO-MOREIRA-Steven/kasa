@@ -1,0 +1,23 @@
+$Color : #FF6060;
+
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 80px; 
+  &__link--acceuil, &__link--apropos{
+  margin: 10px;
+  color: $Color;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 24px;
+  text-decoration: none;
+  }
+  } 
+
+  #header__link--acceuil:hover, #header__link--apropos:hover{
+    border-bottom: $Color 2px solid;
+  }
+  
+ 

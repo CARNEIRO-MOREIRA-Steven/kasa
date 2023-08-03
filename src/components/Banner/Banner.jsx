@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import "../../styles/Banner.scss"
 
 
 const Banner = ({ imageUrl, altText, title }) => {
 
   return (
-    <section id="content">
-      <span id="image_banner">
-        <img id="image" src={imageUrl} alt={altText} />
-        <p id="p">{title}</p>
+    <section>
+      <span id="banner">
+        <img id="banner__image" src={imageUrl} alt={altText} />
+        <p id="banner__title">{title}</p>
       </span>
     </section>
   );

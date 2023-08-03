@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Datas from '../../datas/logement.json';
-
+import "../../styles/Card.scss"
 
 function Card() {
   const [apartmentData, setApartmentData] = useState([]);
@@ -13,13 +13,13 @@ function Card() {
  console.log(Datas)
   return (
     <section id="section">
-      <div id="card">
+      <div id="section__card">
         {apartmentData.map((apartment, index) => (
-          <Link id="link" to={`/apartment/${apartment.id}`} key={index}>
-            <article id="logement">
-              <img alt="apartement" id="image_card" src={apartment.cover} />
+          <Link id="section__card--link" to={`/apartment/${apartment.id}`} key={index}>
+            <article id="section__card--logement">
+              <img alt="apartement" id="section__card--image" src={apartment.cover} />
             </article>
-            <p id="title">{apartment.title}</p>
+            <p id="section__card--title">{apartment.title}</p>
           </Link>
         ))}
       </div>
