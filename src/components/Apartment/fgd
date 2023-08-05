@@ -1,0 +1,48 @@
+// import "../../styles/Apartment.scss";
+import React from "react";
+import Carousel from "../Carousel/Carousel";
+import Collapse from "../Collapse/Collapse";
+
+const ApartmentDetails = ({ apartment }) => {
+  const collapsData = [
+    {
+      liTitle: "Description",
+    },
+    {
+      liTitle: "Equipements",
+    }
+  ];
+
+  // Combine all equipment items into a single string
+  const allEquipments = apartment.equipments.join(', ');
+
+  return (
+    <section id="apartment">
+      <div >
+        {/* <Carousel pictures={apartment.pictures} /> */}
+        <h2 id="apartment__title">{apartment.title}</h2>
+        <h3 id="apartment__location">{apartment.location}</h3>
+        <ul id="apartment__tags">
+          {apartment.tags.map((tag, index) => (
+            <li id="apartment__tags--detail" key={index}>
+              {tag}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div id="apartment__card--profil">
+        <p id="apartment__card--profil--name">{apartment.host.name}</p>
+        <img
+          id="apartment__card--profil--image"
+          src={apartment.host.picture}
+          alt="profil"
+        />
+        <div>{apartment.rating}</div>
+      </div>
+      {/* <Collapse liTitle={collapsData[0].liTitle} textDescription={apartment.description} />
+      <Collapse liTitle={collapsData[1].liTitle} textDescription={allEquipments}/> */}
+    </section>
+  );
+};
+
+export default ApartmentDetails;
