@@ -1,0 +1,22 @@
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    &__arrow--left, &__arrow--right {
+            position: absolute;  
+        }
+    &__image{
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+    }
+    &__arrow--right{
+        right: 100px; 
+    }
+    &__arrow--left{
+        left: 100px;
+    } 
+} 

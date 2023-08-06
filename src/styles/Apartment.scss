@@ -1,0 +1,89 @@
+$PinkColor : rgba(255, 96, 96, 1);
+$MarginDetails : 5px;
+#apartment{
+    margin: 20px 80px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__content--profil--user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    &__title, &__location{
+        color: $PinkColor;
+        margin: $MarginDetails;
+    }
+    &__title{
+        font-size: 30px;
+    }
+    &__tags{
+        display: flex;
+        padding-inline-start: 0px;
+        margin: $MarginDetails;
+        margin-top: 15px;
+    }
+    &__tags--detail{
+            display :flex ;
+            margin-right: 10px;
+            height: 25px;
+            // width: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: center;
+            justify-content: center;
+            background-color: $PinkColor;
+            color: white;
+            border-radius: 10px;
+        }
+
+    &__card--profil{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 65px;
+    }
+    &__card--profil--name{
+            color: $PinkColor;
+            font-size: 18px;
+            font-family: Montserrat;
+            text-align: right;
+            width: 70px;
+            margin: 0px 10px;
+            
+        }
+        &__card--profil--image{
+            border-radius: 50%;
+            width: 60px;
+        }
+    &__collapse{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 5%;
+    } 
+    &__collapse, section {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+        
+    }
+    &__collapse > p {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+img.star__ratting--image{
+      width: 25px; /* Ajustez la largeur selon vos besoins */
+      height: 24px; /* Ajustez la hauteur selon vos besoins */
+      margin-right: 10px; /* Espacement entre les étoiles */
+      margin-top: 15px;
+    }
+
+    .equipment__list p{
+        margin: 5px;
+    }
+

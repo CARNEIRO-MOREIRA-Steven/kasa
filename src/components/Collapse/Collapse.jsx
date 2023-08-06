@@ -3,7 +3,7 @@ import Arrow from '../../assets/arrow_back.svg';
 import '../../styles/Collapse.scss';
 import '../../styles/Style.css';
 
-const Collapse = ({ liTitle, textDescription }) => {
+const Collapse = ({ liTitle, textDescription, children }) => {
   const [isContentOpen, setIsContentOpen] = useState(false);
 
   const handleArrowClick = () => {
@@ -21,9 +21,14 @@ const Collapse = ({ liTitle, textDescription }) => {
           src={Arrow}
         />
       </li>
-      <p id="collapse__description" className={isContentOpen ? 'open' : 'closed'}>
+      <div id="collapse__description" className={`${isContentOpen ? 'open' : 'closed'}`}>
         {textDescription}
-      </p>
+        {isContentOpen && (
+          <div className="equipment__list">
+            {children}
+          </div>
+        )}
+      </div>
     </section>
   );
 };
