@@ -14,4 +14,23 @@
   margin-top: 85px;
   font-size: 35px;
     }
+
+
+@media screen and (min-width: 300px) and (max-width: 900px){
+
+    &__image{
+        height: 100px;
+        width: 100%;
+        margin: 0px 15px;
+    }
+    &__title{
+        left: 20px;
+        margin-top: 20px;
+        font-size : 25px ;
+        width: 180px;  
+    }
+
 }
+}
+
+

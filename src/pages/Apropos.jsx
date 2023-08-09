@@ -3,7 +3,7 @@ import Footer from '../components/Footer/Footer'
 import Banner from '../components/Banner/Banner'
 import Collapse from '../components/Collapse/Collapse'
 import React from 'react';
-import AProposImage from '../assets/montagne.png'; // Importez l'image spécifique pour votre page "À propos"
+import AProposImage from '../assets/montagne.png';
 
 
 
@@ -31,7 +31,7 @@ function Apropos () {
     return (
         <section>
             <Header />
-            <Banner imageUrl={AProposImage} altText={altText} />
+            <Banner id="BannerApropos" imageUrl={AProposImage} altText={altText} />
             {collapsData.map((data, index) => (
             <Collapse key={index} liTitle={data.liTitle} textDescription={data.textDescription}/>
              ))}
