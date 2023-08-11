@@ -8,7 +8,7 @@ return (
     <Header />
     <div id="error">
     <h1 id="error__numero">404</h1>
-    <h2 id="error__description">Oups! La page que vous demandez n'existe pas.</h2>
+    <h2 id="error__numero--description">Oups! La page que vous demandez n'existe pas.</h2>
     <p>Retourner à la page d'acceuil</p>
     </div>
     <Footer/>

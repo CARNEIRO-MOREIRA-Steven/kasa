@@ -31,7 +31,7 @@ function Apropos () {
     return (
         <section>
             <Header />
-            <Banner id="BannerApropos" imageUrl={AProposImage} altText={altText} />
+            <Banner id="BannerApropos" imageUrl={AProposImage} altText={altText} className="banner-large"/>
             {collapsData.map((data, index) => (
             <Collapse key={index} liTitle={data.liTitle} textDescription={data.textDescription}/>
              ))}

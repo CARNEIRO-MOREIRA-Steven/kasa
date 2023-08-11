@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import "../../styles/Banner.scss"
 
+const Banner = ({ imageUrl, altText, title, className}) => {
 
-const Banner = ({ imageUrl, altText, title }) => {
 
   return (
     <section>
       <span id="banner">
-        <img id="banner__image" src={imageUrl} alt={altText} />
+        <img id="banner__image" src={imageUrl} alt={altText} className={className}/>
         <p id="banner__title">{title}</p>
       </span>
     </section>
