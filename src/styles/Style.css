@@ -45,7 +45,7 @@ body{
 
 @keyframes slideOut {
   from {
-    height: auto;
+    height: 100%;
     opacity: 1;
   }
   to {
@@ -56,11 +56,11 @@ body{
 #collapse__description {
   overflow: hidden;
   height: 0;
-  transition: height 1000ms, opacity 500ms;
+  transition: height 5000ms, opacity 500ms;
 }
 
 .open {
-  height: auto;
+
   opacity: 1;
 }
 

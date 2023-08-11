@@ -15,9 +15,9 @@ function PageApartment () {
     <section>
       <Header />
       {selectedApartment && (
-        <>
+        
           <ApartmentDetails apartment={selectedApartment} />
-        </>
+        
       )}
       <Footer />
     </section>
