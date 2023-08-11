@@ -1,0 +1,12 @@
+$PinkColor : #FF6060 ;
+
+#error{
+    color: $PinkColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__numero{
+        font-size: 200px;
+        margin: 10px;
+    }
+}
