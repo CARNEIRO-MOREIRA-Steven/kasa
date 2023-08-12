@@ -20,51 +20,11 @@ body{
   }
 }
 
-.arrow {
-  transition: transform 500ms;
-}
 
 .rotated-in {
   animation: rotateIn 500ms forwards;
 }
 
 .rotated-out {
-  animation: rotateOut 500ms forwards;
-}
-
-@keyframes slideIn {
-  from {
-    height: 0;
-    opacity: 0;
-  }
-  to {
-    height: auto;
-    opacity: 1;
-  }
-}
-
-@keyframes slideOut {
-  from {
-    height: 100%;
-    opacity: 1;
-  }
-  to {
-    height: 0;
-    opacity: 0;
-  }
-}
-#collapse__description {
-  overflow: hidden;
-  height: 0;
-  transition: height 5000ms, opacity 500ms;
-}
-
-.open {
-
-  opacity: 1;
-}
-
-.closed {
-  height: 0;
-  opacity: 0;
+  animation: rotateOut 500ms forwards; 
 }

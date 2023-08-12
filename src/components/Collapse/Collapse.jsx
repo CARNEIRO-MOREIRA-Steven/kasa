@@ -5,7 +5,6 @@ import '../../styles/Style.css';
 
 const Collapse = ({ liTitle, textDescription, children }) => {
   const [isContentOpen, setIsContentOpen] = useState(false);
-
   const handleArrowClick = () => {
     setIsContentOpen((prevState) => !prevState);
   };
@@ -22,12 +21,9 @@ const Collapse = ({ liTitle, textDescription, children }) => {
         />
       </li>
       <div id="collapse__description" className={`${isContentOpen ? 'open' : 'closed'}`}>
-        {textDescription}
-        {isContentOpen && (
-          <div className="equipment__list">
-            {children}
-          </div>
-        )}
+      <div className="text-wrapper">
+    {textDescription}{children}
+      </div>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ $Color : #FF6060;
   text-decoration: none;
   }
 
- @media screen and (min-width: 300px) and (max-width: 900px){
+ @media screen and (min-width: 320px) and (max-width: 900px){
     
       margin: 15px;
       &__logo, img{
@@ -31,12 +31,15 @@ $Color : #FF6060;
       margin-left: 20px;
     
     }
-  }
+  } 
   }
   
   #header__link--acceuil:hover, #header__link--apropos:hover{
     border-bottom: $Color 2px solid;
   }
+
+
+ 
  
 
 

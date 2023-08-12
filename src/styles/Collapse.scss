@@ -22,9 +22,8 @@ $PinkColor : #FF6060 ;
   
     }
   }
-    &__description{
-    height: 0;
-    overflow: hidden;
+  &__description {
+    max-height: 0;
     color: $PinkColor;
     font-size: 16px;
     background-color: #F6F6F6;
@@ -32,14 +31,17 @@ $PinkColor : #FF6060 ;
     margin-bottom: 10px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    transition: height 1000ms;
+    overflow: hidden;
+    transition: max-height 1s;   
     &.open {
-      height: auto; // Rétablir la hauteur automatique pour afficher le contenu
-      padding: 15px;
+      max-height: 500px;
     }
+  }
+  .text-wrapper {
+    padding: 15px;
   }
 
   @media screen and (min-width: 300px) and (max-width: 900px){
-margin: 15px 15px;
+  margin: 15px 15px;
     }      
   }
