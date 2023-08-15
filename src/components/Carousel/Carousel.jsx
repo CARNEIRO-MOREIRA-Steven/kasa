@@ -24,14 +24,15 @@ const Carousel = ({ pictures }) => { // Remplacez "picture" par "pictures"
 
     return (
       <div className="carousel">
-        <img src={ArrowLeft} className="carousel__arrow--left" onClick={previousSlide}>
+        <img alt="flèche gauche" src={ArrowLeft} className="carousel__arrow--left" onClick={previousSlide}>
         </img>
         <img
           className="carousel__image"
           src={pictures[currentIndex]} // Remplacez "picture" par "pictures"
           alt={`apartment-${currentIndex}`}
         />
-        <img src={ArrowRight} className="carousel__arrow--right" onClick={nextSlide}>
+        <p className="carousel__number">{currentIndex}/{pictures.length}</p>
+        <img alt="flèche droite" src={ArrowRight} className="carousel__arrow--right" onClick={nextSlide}>
         </img>
       </div>
     );

@@ -5,14 +5,14 @@ $PinkColor : #FF6060 ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 55px;
-    margin: 79.5px;
+    gap: 60px;
+    margin: 90.5px;
     &__numero{
         font-size: 200px;
         margin: 10px;
     }
     @media screen and (min-width: 300px) and (max-width: 900px){
-        margin: 94px 35px ;
+        margin: 109px 35px ;
         gap: 20px;
         &__numero{
             font-size: 100px;
@@ -22,5 +22,8 @@ $PinkColor : #FF6060 ;
             text-align: center;
         }
         
+    }
+    &__acceuil{
+        color: $PinkColor;
     }
 }

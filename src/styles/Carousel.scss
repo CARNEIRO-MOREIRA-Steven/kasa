@@ -13,6 +13,15 @@
         align-items: center;
         border-radius: 25px;
     }
+    &__number{
+        position: absolute;
+        top: 390px;
+        color: white;
+        font-size: 25px;
+        @media screen and (min-width: 300px) and (max-width: 900px){
+            top: 375px;
+        }
+    }
     &__arrow--right{
         right: 100px; 
     }

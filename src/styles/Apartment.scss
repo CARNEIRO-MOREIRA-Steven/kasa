@@ -1,5 +1,6 @@
 $PinkColor : rgba(255, 96, 96, 1);
-$MarginDetails : 5px;
+$MarginDetails : 10px;
+
 #apartment{
     margin: 20px 80px;
     &__content{
@@ -49,7 +50,6 @@ $MarginDetails : 5px;
     &__card--profil--name{
             color: $PinkColor;
             font-size: 18px;
-            font-family: Montserrat;
             text-align: right;
             width: 70px;
             margin: 0px 10px;
@@ -63,7 +63,7 @@ $MarginDetails : 5px;
         display: flex;
         flex-direction: row;
         width: 100%;
-        gap: 5%;
+        gap: 15px;
     } 
     &__collapse, section {
         width: 100%;

@@ -19,10 +19,8 @@ const ApartmentDetails = ({ apartment }) => {
     const maxRating = 5;
     const starRating = Math.round(rating);
     const stars = [];
-  
     for (let i = 1; i <= maxRating; i++) {
       const starImageSrc = i <= starRating ? starFilled : starEmpty; // Image d'étoile pleine ou vide
-  
       stars.push(
         <img className="star__ratting--image" key={i} src={starImageSrc} alt={`${i} star`}/>
       );
