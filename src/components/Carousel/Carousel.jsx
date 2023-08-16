@@ -4,10 +4,10 @@ import ArrowLeft from "../../assets/arrow-left.svg"
 import ArrowRight from "../../assets/arrow-right.svg"
 const Carousel = ({ pictures }) => { // Remplacez "picture" par "pictures"
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    
     const previousSlide = () => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
+        prevIndex === 1 ? pictures.length - 1 : prevIndex - 1
       );
     };
 
@@ -22,6 +22,8 @@ const Carousel = ({ pictures }) => { // Remplacez "picture" par "pictures"
       return <div>Images not available</div>;
     }
 
+    const displayIndex = currentIndex + 1;
+
     return (
       <div className="carousel">
         <img alt="flèche gauche" src={ArrowLeft} className="carousel__arrow--left" onClick={previousSlide}>
@@ -31,7 +33,7 @@ const Carousel = ({ pictures }) => { // Remplacez "picture" par "pictures"
           src={pictures[currentIndex]} // Remplacez "picture" par "pictures"
           alt={`apartment-${currentIndex}`}
         />
-        <p className="carousel__number">{currentIndex}/{pictures.length}</p>
+        <p className="carousel__number">{displayIndex}/{pictures.length}</p>
         <img alt="flèche droite" src={ArrowRight} className="carousel__arrow--right" onClick={nextSlide}>
         </img>
       </div>
